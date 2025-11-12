@@ -1,11 +1,296 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: rgb(145, 128, 108);
+        }
+
+        #navbar {
+            position: sticky;
+            top: 0%;
+        }
+
+        .header {
+            height: 70px;
+            background-color: gray;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .header img {
+            width: 100px;
+            height: auto;
+
+        }
+
+        .icon {
+            margin-left: 50px;
+        }
+
+        .icons {
+            position: relative;
+            top: 0;
+            left: 350px;
+        }
+
+        #logo {
+            position: absolute;
+            top: 20px;
+            left: 0;
+        }
+
+        ul {
+            display: flex;
+            gap: 50px;
+            list-style-type: none;
+        }
+
+        .icons li img {
+            width: 30px;
+            height: auto;
+        }
+
+        .container {
+            background-color: lightblue;
+            width: 100%;
+            height: 700px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .content {
+            text-align: center;
+            width: 40%;
+            height: auto;
+            float: left;
+        }
+
+        .shoes {
+            display: flex;
+            width: 60%;
+            float: right;
+            gap: 10px;
+
+        }
+
+        .shoes img {
+            width: 200px;
+            height: 200px;
+            margin-right: 30px;
+            margin-bottom: 10px;
+        }
+
+        .container1 {
+            background-color: azure;
+            width: 100%;
+            height: 700px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .content1 {
+            position: absolute;
+            right: 0%;
+            float: right;
+            text-align: center;
+            width: 40%;
+            height: auto;
+        }
+
+        .shoes1 {
+            display: flex;
+            justify-content: space-around;
+            width: 60%;
+            float: left;
+            gap: 10px;
+
+        }
+
+        .shoes1 img {
+            width: 200px;
+            height: 200px;
+            margin-right: 30px;
+            margin-bottom: 10px;
+        }
+
+        h2,
+        p,
+        img,
+        ul {
+            cursor: pointer;
+        }
+
+        .footer ul {
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .main-footer-all{
+            background-color: gray;
+            height: 350px;
+        }
+        .footer {
+            width: 100%;
+            height: 100px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .footer ul li img {
+            width: 40px;
+            height: auto;
+        }
+
+        .main-footer {
+            text-align: center;
+            background-color: rgb(127, 39, 39);
+            font-size: larger;
+            height: 70px;
+            padding-top: 20px;
+        }
+        
+    </style>
 </head>
+
 <body>
-    <p>html</p>
+    <div id="navbar" class="header">
+        <img id="logo" src="Images/nike logo.png" alt="logo">
+        <ul>
+            <li>HOME</li>
+            <li>SERVICES</li>
+            <li>CONTACT US</li>
+            <li>ABOUT US</li>
+        </ul>
+        <ul class="icons">
+            <li><img class="icon" src="Images/search icon.png" alt=""></li>
+            <li><img class="icon" src="Images/kart.png" alt=""></li>
+            <li><img class="icon" src="Images/three lines.png" alt=""></li>
+        </ul>
+    </div>
+
+    <div class="main">
+        <div class="container">
+            <div class="content">
+                <h2>Explore NIKE Limited Edition</h2>
+                <h1>NIKE LIMITED EDITION</h1>
+                <p>Just go for it.</p>
+            </div>
+
+            <div class="shoes">
+                <div class="shoe1">
+                    <img src="Images/Nike Ava Rover 11 895.00.avif" alt="">
+                    <h2>Nike Ava Rover</h2>
+                    <p>Rs.11 895.00</p>
+                </div>
+                <div class="shoe2">
+                    <img src="Images/Nike Dunk Low 11 895.00.avif" alt="">
+                    <h2>Nike Dunk Low</h2>
+                    <p>Rs.11 895.00</p>
+                </div>
+                <div class="shoe3">
+                    <img src="Images/Nike Killshot 2 Leather premium 9 195.00.avif" alt="">
+                    <h2>Nike Killshot 2 <h2> Leatherr Premium</h2>
+                    </h2>
+                    <p>Rs.9 195.00</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container1">
+            <div class="content1">
+                <h2>Explore NIKE Limited Edition</h2>
+                <h1>NIKE LIMITED EDITION</h1>
+                <p>Just go for it.</p>
+            </div>
+
+            <div class="shoes1">
+                <div class="shoe4">
+                    <img src="Images/Nike ReactX Rejuven8 5 695.00.avif" alt="">
+                    <h2>Nike ReactX Rejuven8</h2>
+                    <p>Rs.5 695.00</p>
+                </div>
+                <div class="shoe5">
+                    <img src="Images/Nike Strike 2 495.avif" alt="">
+                    <h2>Nike Strike</h2>
+                    <p>Rs.2 495.00</p>
+                </div>
+                <div class="shoe6">
+                    <img src="Images/Nike Strike 3 695.00.avif" alt="">
+                    <h2> Nike Strike </h2>
+                    <p>Rs.3 695.00</p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="content">
+                <h2>Explore NIKE Limited Edition</h2>
+                <h1>NIKE LIMITED EDITION</h1>
+                <p>Just go for it.</p>
+            </div>
+
+            <div class="shoes">
+                <div class="shoe1">
+                    <img src="Images/Nike Strike 3 995.00.avif" alt="">
+                    <h2>Nike Strike</h2>
+                    <p>Rs.3 995.00</p>
+                </div>
+                <div class="shoe2">
+                    <img src="Images/nike Total90 SE 10 795.avif" alt="">
+                    <h2>Nike Total90 SE</h2>
+                    <p>Rs.10 795.00</p>
+                </div>
+                <div class="shoe3">
+                    <img src="Images/Nike Strike 2 495.avif" alt="">
+                    <h2> Nike Strike</h2>
+                    <p>Rs.2 495.00</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="main-footer-all">
+
+        <div class="footer ft">
+            <ul>
+                <li><img src="Images/fb.png" alt=""></li>
+                <li><img src="Images/Google+.png" alt=""></li>
+                <li><img src="Images/instagram.png" alt=""></li>
+                <li><img src="Images/youtube.png" alt=""></li>
+                <li><img src="Images/twitter.png" alt=""></li>
+            </ul>
+        </div>
+        <div id="links" class="footer ft">
+            <ul>
+                <li>Home</li>
+                <li>News</li>
+                <li>About Us</li>
+                <li>Contact Us</li>
+                <li>Our Team</li>
+            </ul>
+        </div>
+
+        <div class="main-footer ft">
+            <p>copyright&copy;2025; <b>Desinged by</b> NAVID</p>
+        </div>
+    </div>
+    
+
 </body>
+
 </html>
